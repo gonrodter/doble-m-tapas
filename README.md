@@ -34,7 +34,7 @@ Widget de DISH (el que ya usan en doblem.eatbu.com) y carta de Kekomo, cada uno 
 
 ## Pendiente antes de publicar
 
-- [ ] **Dominio**: decidido `doblemtapas.es` sin www (2026-11-09, por precio: DonDominio 6,95 € + IVA al año, registro y renovación; el .com cuesta más del doble). Ya puesto en canonical, OG, JSON-LD, robots y sitemap. Falta comprarlo a nombre del titular y en Vercel añadir `doblemtapas.es` como principal y `www.doblemtapas.es` redirigiendo
+- [x] **Dominio** `doblemtapas.es` (GoDaddy, cuenta de Gonzalo) publicado el 2026-11-09 en Vercel, cuenta de la agencia (its.terron.studio, proyecto `doble-m-tapas`, repo `gonrodter/doble-m-tapas`, se publica solo con cada push a `main`). DNS en GoDaddy: A `@` 216.198.79.1 y 64.29.17.1, CNAME `www` 88d10190d5847f1d.vercel-dns-017.com; `www` redirige a la raíz. Pendiente: titular a nombre de Manuel y bloqueo de dominio en GoDaddy
 - [x] **Horario** confirmado por el cliente el 2026-11-09: todos los días 13:30–16:00 y 21:00–23:30 (cambiado dos veces el mismo día; la última es la buena) (HTML, JSON-LD, FAQ, pie y `app.js`)
 - [x] Datos fiscales confirmados por el cliente el 2026-11-09 (Manuel Márquez Carrabeo, 45811491E, mismo domicilio): coinciden con aviso legal y privacidad
 - [ ] Confirmar la cifra "abrimos en 2019" (sale de Diario de Sevilla)
