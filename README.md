@@ -6,7 +6,7 @@ Ver en local: `python3 -m http.server 8766` y abrir http://localhost:8766
 
 ## Estructura
 
-- `index.html` · secciones: hero con vídeo, la casa, imprescindibles, platos, el local, galería, opiniones, contacto (horario + mapa bajo demanda), preguntas frecuentes
+- `index.html` · secciones: hero con vídeo, la casa, imprescindibles, platos, el local, galería, opiniones, a domicilio, contacto (horario + mapa bajo demanda), preguntas frecuentes
 - **Carta**: no está en el HTML. El cliente la actualiza en Kekomo (kekomo.es/carta/doble-m) y la web la abre en un modal con iframe, así siempre está al día. Cualquier enlace a `#carta` lo abre. Si Kekomo da acceso oficial a sus datos, se puede volver a pintar como texto (mejor SEO) con una función en Vercel
 - Hero: vídeo a pantalla completa con el titular encima (el vídeo es 720×1280, se ve algo blando en pantallas grandes; pedir versión horizontal)
 - `privacidad.html`, `aviso-legal.html` (noindex) con los datos del titular que publica su web de eatbu
@@ -27,6 +27,14 @@ Ver en local: `python3 -m http.server 8766` y abrir http://localhost:8766
 ## Transiciones
 
 Hovers solo con ratón (`@media(hover:hover)`), pulsación con `scale` en táctil, botones con relleno que sube, fotos grandes que se descubren con máscara, listas en cascada, FAQ animado, modales con entrada/salida (hoja desde abajo en móvil), vídeo que aparece sobre el póster. Todo se desactiva con `prefers-reduced-motion`.
+
+## A domicilio
+
+Sección `#domicilio` (también en menú, pie y FAQ) con enlaces a sus fichas, comprobadas el 2026-11-10 con la dirección del bar:
+- Uber Eats: https://www.ubereats.com/es/store/doble-m/o5EhBGKuWZ6DT2A-9VeDoA (hay otra ficha "Doble M old", `yHhZPscy…`, de baja desde feb 2023: no usarla)
+- Glovo: https://glovoapp.com/es/es/sevilla/stores/doble-m-sevilla
+
+Si cambian de plataforma o de ficha, cambiar los enlaces en la sección, el pie, la FAQ (visible y JSON-LD) y el `OrderAction` del JSON-LD.
 
 ## Reservas y carta
 
