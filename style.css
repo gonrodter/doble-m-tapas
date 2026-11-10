@@ -265,6 +265,7 @@ dialog::backdrop{background:rgba(10,18,13,.86)}
 .js .reveal{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
 .js .reveal.visible{opacity:1;transform:none}
 .js .arrow-link.reveal{transition:opacity 1s var(--ease) .15s,transform 1s var(--ease) .15s,color .45s var(--ease),border-color .45s var(--ease),scale .2s var(--ease)}
+.js .delivery-link.reveal{transition:opacity 1s var(--ease) var(--d,0s),transform 1s var(--ease) var(--d,0s),color .55s var(--ease),scale .2s var(--ease)}
 .js .mask-reveal{opacity:0;clip-path:inset(100% -10% -20% -10%);transform:translateY(60px);transition:opacity 1.1s var(--ease),clip-path 1.2s var(--ease),transform 1.2s var(--ease)}
 .js .mask-reveal.visible{opacity:1;clip-path:inset(-20% -10% -20% -10%);transform:none}
 @keyframes titleIn{from{transform:translateY(110%)}to{transform:none}}
@@ -369,6 +370,8 @@ dialog::backdrop{background:rgba(10,18,13,.86)}
 @media(max-width:800px){
   .hero-content{padding-top:58px}
   .contact-title{text-align:center}
+  .delivery-copy{text-align:center}
+  .delivery-copy p{margin-inline:auto}
   .hours,.hours th,.hours td{text-align:left}
   .hours{table-layout:fixed}
   .hours tr>:nth-child(2){text-align:center}
